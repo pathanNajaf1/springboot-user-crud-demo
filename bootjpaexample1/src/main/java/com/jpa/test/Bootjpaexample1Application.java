@@ -54,5 +54,8 @@ public class Bootjpaexample1Application {
 		} else {
 			System.out.println("User with ID 3 not found.");
 		}
+		// Deleting user with id 103
+	    userRepository.deleteById(103);
+		System.out.println("Deleted the user");
 	}
 }
