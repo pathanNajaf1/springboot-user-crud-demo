@@ -20,6 +20,7 @@ public class Bootjpaexample1Application {
 
 		UserRepository userRepository = context.getBean(UserRepository.class);
 
+//		userRepository.deleteAll();  ////Use this to delete the users if running the code second time or more to avoid duplicate users being created
 		// Creating users
 		User user1 = new User();
 		user1.setName("Lakhan Singh");
